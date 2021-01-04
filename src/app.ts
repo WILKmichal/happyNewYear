@@ -14,6 +14,6 @@ app.use(bodyParser.urlencoded({ extended: true }))
 
 app.use('/register', InscriptionRoute);
 
-app.listen(8080, () => {
-    console.log(`Server run to http://localhost:8080`);
+app.listen(8888, () => {
+    console.log(`Server run to http://localhost:8888`);
 })
