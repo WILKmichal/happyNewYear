@@ -23,14 +23,18 @@
     "@types/cors": "^2.8.9",
     "@types/dotenv": "^8.2.0",
     "@types/jsonwebtoken": "^8.5.0",
+    "@types/stripe": "^8.0.417",
     "bcrypt": "^5.0.0",
+    "card": "^2.5.0",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "jsonwebtoken": "^8.5.1"
+    "jsonwebtoken": "^8.5.1",
+    "stripe": "^8.129.0"
   },
   "devDependencies": {
     "@types/express": "^4.17.9",
+    "@types/jquery": "^3.5.5",
     "@types/node": "^14.14.19",
     "nodemon": "^2.0.6",
     "ts-node": "^9.1.1",
