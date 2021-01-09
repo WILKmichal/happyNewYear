@@ -15,6 +15,7 @@ export const inscriptionController = async (req: Request, res: Response) => {
 
         const personne = new User(null, data.firstname, data.lastname, data.email, data.sexe, undefined, data.date_naissance, User.addMonthsToCurrentDate(0) , false, User.addMonthsToCurrentDate(1),0,User.addMonthsToCurrentDate(1) , pass );
         await personne.save();
+
         // const pass = await PasswordException.hashPassword(data.password);
         // const user = new User(personne, data.email, pass);
         // await user.save();
