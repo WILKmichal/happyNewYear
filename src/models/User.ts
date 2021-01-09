@@ -1,4 +1,4 @@
-import MySQL from '../db/MySQL';
+import MySQL from "../db/MySQL";
 
 export default class User {
 
@@ -75,7 +75,7 @@ export default class User {
                 this.iduser = id;
                 console.log(`Save ${this.table}`);
                 resolve(id)
-            }).catch((err) => {
+            }).catch((err: any) => {
                 console.log(err);
                 reject(false)
             })

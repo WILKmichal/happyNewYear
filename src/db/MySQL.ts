@@ -1,5 +1,5 @@
 import { createConnection, Connection } from 'mysql';
-import User from '../models/user';
+import User from '../models/User';
 import listAttributSelect, { listeTables } from '../utils/listAttributSelect';
 
 export interface jointureInterface {
