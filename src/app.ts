@@ -4,8 +4,10 @@ import express from "express";
 import cors from "cors";
 
 import { InscriptionRoute } from "./routes/inscription";
+import { paymentRoute } from "./routes/creditCard";
 
-config(); //process.env
+
+
 const app = express();
 const path = require('path');
 
@@ -15,6 +17,8 @@ app.use(bodyParser.urlencoded({ extended: true }))
 
 app.use('/register', InscriptionRoute);
 app.use(express.static(path.join(__dirname, 'public')));
+app.use('/payment', paymentRoute);
+
 
 app.listen(3000, () => {
     console.log(`Server run to http://localhost:3000`);
