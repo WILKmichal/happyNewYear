@@ -10,7 +10,9 @@ export default class PasswordException extends Error {
     }
 
     public static isValidPassword(password: string): boolean {
+        console.log(password.length >= this.MIN_PASS_SIZE);
         return password.length >= this.MIN_PASS_SIZE;
+       
     }
 
     public static async hashPassword(password: string): Promise < string > {
@@ -18,6 +20,7 @@ export default class PasswordException extends Error {
     }
 
     public static async comparePassword(password: string, hash: string): Promise < boolean > {
+        console.log(password + '  PASSWORRD 2   ' + hash)
         return await compare(password, hash)
     }
 
